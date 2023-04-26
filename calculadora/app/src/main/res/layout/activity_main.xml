@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/window_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:padding="30dp"
+        android:background="@color/io_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            tools:text="12-10+3"/>
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textSize="50sp"
+            android:textColor="@color/green"
+            tools:text="5"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_parentese_esquerdo"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text="("
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_parentese_direito"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text=")"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_limpar"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/red"
+                android:text="C"
+                />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_divisao"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/purple_700"
+                android:text="÷"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_7"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text="7"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_8"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text="8"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_9"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text="9"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_multiplicar"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/purple_700"
+                android:text="×"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_4"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text="4"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_5"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text="5"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_6"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1px"
+                android:background="@color/teal_700"
+                android:text="6"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_subtrair"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/purple_700"
+                android:text="-"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_1"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text="1"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_2"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text="2"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_3"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1px"
+                android:background="@color/teal_700"
+                android:text="3"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_somar"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/purple_700"
+                android:text="+"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_0"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text="0"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_ponto"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_margin="1.5px"
+                android:background="@color/teal_700"
+                android:text="."/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/botao_igual"
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:layout_margin="1px"
+                android:background="@color/purple_500"
+                android:text="="/>
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
